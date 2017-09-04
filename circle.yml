@@ -21,6 +21,6 @@ deployment:
      - docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
      - docker tag dockerapp_dockerapp dockerapp:herohiralal
      - docker tag dockerapp_dockerapp dockerapp:latest
-     - docker push dockerapp_dockerapp:herohiralal
-     - docker push dockerapp_dockerapp:latest
+     - docker push $DOCKER_HUB_USER_ID/dockerapp:herohiralal
+     - docker push $DOCKER_HUB_USER_ID/dockerapp:latest
     
