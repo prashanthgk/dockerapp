@@ -19,8 +19,8 @@ deployment:
     branch: [circle_ci_publish, master]
     commands:
      - docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
-     - docker tag dockerapp_dockerapp $DOCKER_HUB_USERID/dockerapp:herohiralal
-     - docker tag dockerapp_dockerapp $DOCKER_HUB_USERID/dockerapp:latest
-     - docker push $DOCKER_HUB_USERID/dockerapp_dockerapp:herohiralal
-     - docker push $DOCKER_HUB_USERID/dockerapp_dockerapp:latest
+     - docker tag dockerapp_dockerapp dockerapp:herohiralal
+     - docker tag dockerapp_dockerapp dockerapp:latest
+     - docker push dockerapp_dockerapp:herohiralal
+     - docker push dockerapp_dockerapp:latest
     
